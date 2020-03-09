@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="jquery-3.3.1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>admin page</title>
+<style>
+
+body{
+background:lightgray;
+
+}
+ul li{
+float:left;
+padding:10px 90px;
+font-size:25px;
+list-style-type:none;
+text-transform:capitalize;
+
+
+}
+ul li a{
+color:red;
+text-decoration:none;
+
+}
+
+</style>
+</head>
+
+<body>
+<div>
+
+<ul>
+
+<li><a href="indexadmin.html" target="down" class="top">home</a></li>
+<li><a href="addcabs.html" target="addown" class="top">add cabs</a></li>
+<li><a href="viewbookings.php" target="addown" class="top">view bookings</a></li>
+<li><a href="index.html" target="down" class="top">log out</a></li>
+
+</ul>
+</div>
+
+<script>
+
+$(function(){
+
+$(".top").click(function(){
+
+$(".top").css({"color":"white","font-weight":""});
+    
+    $(this).css({"color":"yellow","font-weight":"bold"});
+
+
+});
+
+
+
+});
+
+
+</script>
+</body>
+</html>

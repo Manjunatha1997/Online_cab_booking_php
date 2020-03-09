@@ -1,0 +1,155 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body{
+	background-color:lightgray;
+	
+
+
+	}
+.registration{
+	position:absolute;
+	left:40%;
+	top:10px;
+	background:white;
+	width:30%;
+
+	}
+
+
+.registration h1{
+	margin-left:40px;
+	font-weight:bold;
+	text-transform:capitalize;
+	background:lightgray;
+	width:73%;
+	
+	}
+
+.registration p{
+	font-size:20px;
+	margin-left:40px;
+	font-weight:bold;
+	text-transform:capitalize;
+        
+	
+	}
+.registration input[type=text],
+	      input[type=date],
+	      input[type=number],
+	      input[type=password]
+	{
+	width:80%;
+	height:30px;
+	border:none;
+	border-bottom:2px solid orange;
+	background:none;
+	outline:none;
+	font-size:20px;
+	
+
+	}
+	
+
+.registration #select{
+	width:80%;
+	height:30px;
+	border:none;
+	border-bottom:2px solid orange;
+	background:none;
+	outline:none;
+	font-size:20px;
+	
+	}
+
+
+.registration #submit{
+
+	background:;
+	text-align:center;
+	padding:10px 60px;
+	border:2px solid green;
+	text-decoration:none;
+	font-size:20px;
+	text-transform:uppercase;
+	border-radius:30px;
+	}	
+.registration #submit:hover{
+	text-decoration-line:underline;
+	background:orange;
+	color:white;
+	
+	}
+
+.registration #back{
+
+	background:;
+	text-align:center;
+	padding:5px 20px;
+	border:2px solid green;
+	text-decoration:none;
+	font-size:14px;
+	text-transform:uppercase;
+	}	
+.registration #back:hover{
+	text-decoration-line:underline;
+	background:orange;
+	color:white;
+	
+	}
+
+
+
+
+</style>
+</head>
+<body>
+<form name="registration" action="reg.php" method="post">
+<div class="registration">
+<h1>register here</h1>
+<p>first name:</p>
+<p><input type="text" name="fn" placeholder="type your first name" required> </p>
+<p>last name:</p>
+<p><input type="text" name="ln"  placeholder="type your last name"required></p>
+<p>user name:</p>
+<p><input type="text" name="un" placeholder="type emailid/phone number"required></p>
+<p>date of birth:</p>
+<p><input type="date" name="dob" required ></p>
+<p>gender:</p>
+<p><select name="gender" id="select"  required>
+	<option selected="selected" value="0">--Select--</option>
+   <option value="male" name="gender">male</option>
+   <option value="female" name="gender">fe male</option>
+   </select>
+</p>
+<p>phone number:</p>
+<p><input type="number" name="pn" placeholder="type your phone number"  required></p>
+<p>create password:</p>
+<p><input type="password" id="cp" name="pass" placeholder="create new password" required></p>
+<p><input type="submit" value="submit" id="submit" onClick="Submit()" ></a>
+   <a href="index.html" id="back" >back</a>
+</p>
+
+</div>
+
+</form>
+
+</body>
+<script>
+
+function Submit(){
+
+var a=document.getElementById("cp").value;
+var b=document.getElementById("rtp").value;
+
+if(a!=b){
+alert("passwords should be same");
+}
+submit();
+
+}
+
+
+</script>
+</html>

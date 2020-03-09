@@ -1,0 +1,147 @@
+<html>
+<head>
+<style>
+
+#login{
+	background-color:lightgray;
+	background-height:cover;
+	transition: all 0.8s;
+
+	}
+
+.login{
+	width:350px;
+	height:400px;
+	background:white;
+	position:relative;
+	top:10%;
+	left:40%;
+	border: 2px solid #FF9900;
+	margin-top:100px;
+	}
+
+
+#loginlogo{
+	position:relative;
+	left:135px;
+	top:0px;
+	background:orange;
+	border-radius:50px;
+	width:60px;
+	height:60px;
+	
+	}
+
+.login_one{
+	margin-top:-40px;
+	margin-left:50px;
+	font-weight:bold;
+	
+	font-size:18px;
+	text-transform:capitalize;
+	
+	}
+.login_one #username,#password{
+	border:none;
+	border-bottom:2px solid orange;
+	outline:none;
+	width:250px;
+	font-size:20px;
+	}
+
+ .login .login_one #login{
+	text-align:center;
+	padding:10px 90px;
+	border:2px solid green;
+	text-decoration:none;
+	font-size:20px;
+	text-transform:uppercase;
+	border-radius:50px;
+	}	
+.login .login_one #login:hover{
+	background:orange;
+	color:white;
+	
+	}
+
+.login .login_one #back{
+	text-align:center;
+	padding:4px 5px;
+	border:2px solid green;
+	text-decoration:none;
+	font-size:16px;
+	text-transform:uppercase;
+	}	
+.login .login_one #back:hover{
+	text-decoration-line:underline;
+	background:orange;
+	color:white;
+	
+	}
+
+
+#createnew ,#forgotpassword{
+text-decoration:none;
+
+}
+#createnew:hover ,#forgotpassword:hover{
+	text-decoration-line:underline;
+	color:red;
+	
+	}
+#leftarr{
+font-size:50px;
+position:absolute;
+top:5px;
+left:30px;
+width:50px;
+
+
+
+}
+#leftarr a{
+
+text-decoration:none;
+color:#333333;
+text-align:right;
+
+}
+#back{
+
+margin-left:50px;
+}
+</style>
+
+</head>
+<body>
+<div id="login">
+<div class="login">
+<div id="leftarr"><a href="index.html">&laquo;</a></div>
+<img src="userlogo.png" id="loginlogo">
+
+<form  action="login.php" method="post">
+<div class="login_one">
+<br><br><br>
+<p>user name:</p>
+<p><input type="text" name="username"  placeholder="email id/ phone number" id="username" required/></p>
+
+<p>password:</p>
+<p><input type="password" name="password" placeholder="enter password" id="password" required/></p>
+<p><input type="submit" value="log in" id="login" >
+</p>
+</form>
+<div>
+<P ><a href="registration.html" id="createnew">Don't have accoount?create new</a></P>
+<P ><a href="forgotpassword.html" id="forgotpassword">Forgot Password ?</a>
+	<a href="index.html" id="back">back</a>
+
+</P>
+<br><br>
+
+ 
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
